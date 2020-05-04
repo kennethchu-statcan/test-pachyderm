@@ -1,1 +1,0 @@
-FROM pachyderm/opencv:latest
