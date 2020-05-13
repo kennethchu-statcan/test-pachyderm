@@ -25,5 +25,5 @@ input:
   pfs:
     name: data
     repo: wifr-sensitivity-second
-    glob: "/*"
+    glob: "/"
     branch: 2020-04-26_01
