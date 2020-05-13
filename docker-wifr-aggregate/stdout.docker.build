@@ -1,0 +1,14 @@
+Sending build context to Docker daemon   29.7kB
+Step 1/4 : FROM paradisepilot/ds-base:0.0
+ ---> 8b0594a91614
+Step 2/4 : COPY main.sh /main.sh
+ ---> Using cache
+ ---> 7f3bdbd9a8c8
+Step 3/4 : COPY src /src
+ ---> f68d6b54bed9
+Step 4/4 : ENTRYPOINT ["/main.sh"]
+ ---> Running in f9538732775e
+Removing intermediate container f9538732775e
+ ---> cdaf7ce5fb8a
+Successfully built cdaf7ce5fb8a
+Successfully tagged wifr-aggregate:1.0

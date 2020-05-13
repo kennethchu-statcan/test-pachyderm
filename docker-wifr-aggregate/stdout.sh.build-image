@@ -1,0 +1,18 @@
+The push refers to repository [docker.io/paradisepilot/wifr-aggregate]
+34174f139609: Preparing
+e3dc821f5dc9: Preparing
+87e2319609d6: Preparing
+35aff867efb6: Preparing
+fcd8d39597dd: Preparing
+875120aa853c: Preparing
+f2cb0ecef392: Preparing
+875120aa853c: Waiting
+f2cb0ecef392: Waiting
+e3dc821f5dc9: Layer already exists
+87e2319609d6: Layer already exists
+fcd8d39597dd: Layer already exists
+35aff867efb6: Layer already exists
+875120aa853c: Layer already exists
+f2cb0ecef392: Layer already exists
+34174f139609: Pushed
+1.0: digest: sha256:186cf936593746c9d39bebb6f9dd862c5c94a51cfca542b19a144e9b088bc84e size: 1793
