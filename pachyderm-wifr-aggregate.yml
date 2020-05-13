@@ -20,7 +20,7 @@ resource_limits:
   cpu: 3
 parallelism_spec:
   constant: 2 # 100  # use N pods
-output_branch: 2020-05-13_01
+output_branch: 2020-04-26_01
 input:
   pfs:
     name: data
