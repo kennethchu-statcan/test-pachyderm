@@ -1,0 +1,29 @@
+pipeline:
+  name: wifr-aggregate
+description: "Aggregates model outputs under perturbations of IFR estimates in the IFR sensitivity analysis"
+standby: true
+transform:
+  image: paradisepilot/wifr-aggregate:1.0
+  cmd:
+    - "/main.sh"
+    - "--src"
+    - "/src/"
+    - "--data"
+    - "/pfs/data/"
+    - "--output"
+    - "/pfs/out"
+resource_requests:
+  memory: "2G"
+  cpu: 2
+resource_limits:
+  memory: "3G"
+  cpu: 3
+parallelism_spec:
+  constant: 2 # 100  # use N pods
+output_branch: 2020-05-13_01
+input:
+  pfs:
+    name: data
+    repo: wifr-sensitivity-second
+    glob: "/*"
+    branch: 2020-04-26_01
