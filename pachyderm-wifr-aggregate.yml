@@ -3,7 +3,10 @@ pipeline:
 description: "Aggregates model outputs under perturbations of IFR estimates in the IFR sensitivity analysis"
 standby: true
 transform:
-  image: paradisepilot/wifr-aggregate:1.0
+  #image: paradisepilot/wifr-aggregate:1.0
+  image: k8scc01covidacr.azurecr.io/daaas-kenchu-wifr-aggregate:a5a9c31d885569a7699fb66987794a6217d02c9f
+  image_pull_secrets:                                                                                                  
+    - k8scc01covidacr-registry-connection                 
   cmd:
     - "/main.sh"
     - "--src"
